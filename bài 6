@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cha{
+            display:grid;
+            grid-template-areas:
+            "header header header"
+            "hero hero hero"
+            "sidebar content aside"
+            "footer footer footer" ;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px 50px ;
+            gap: 5px;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(255, 251, 165);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .hero {
+            grid-area: hero;
+            background-color: rgb(255, 182, 193);
+            text-align: center;
+            padding-top: 15px;
+            text-align: center;
+        }
+        .sidebar{
+            grid-area: sidebar ;
+            background-color: rgb(212, 123, 218);
+            text-align: center;
+            padding-top: 15px;}
+        .content{
+            grid-area: content ;
+            background-color: rgb(236, 87, 181);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .aside{
+            grid-area: aside ;
+            background-color: rgb(182, 123, 218);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .footer{
+            grid-area: footer ;
+            background-color: rgb(237, 255, 156);
+            text-align: center;
+            padding-top: 15px;}
+         
+    </style>
+</head>
+<body>
+  
+    <div class="cha">
+        <div class="header">Header</div>
+        <div class="hero">Hero</div>
+        <div class="sidebar">dịch vụ 1</div>
+        <div class="content">dịch vụ 2</div>
+        <div class="aside">dịch vụ 3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
