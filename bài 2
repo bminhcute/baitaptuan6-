@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tong {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            flex-direction: column;
+            grid-template-areas:
+            "mot hai ba"
+            "bon nam sau"
+            "bay tam chin" ;
+            row-gap: 5px;
+            text-align: center;
+            color: white;
+        }
+        .tong > div {
+            background-color: darkorchid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tong">
+        <div class="mot">1</div>
+        <div class="hai">2</div>
+        <div class="ba">3</div>
+        <div class="bon">4</div>
+        <div class="nam">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas exercitationem et, unde, aliquid enim voluptate quasi, iusto quibusdam impedit quaerat aspernatur similique cumque. Odit mollitia unde, nemo iste dolor asperiores?</div>
+        <div class="sau">6</div>
+        <div class="bay">7</div>
+        <div class="tam">8</div>
+        <div class="chin">9</div>
+    </div>
+</body>
+</html>
